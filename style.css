@@ -1,0 +1,289 @@
+/* flex-wrap.html */
+
+/* body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container-projetos {
+    background-color: #e0e0e0;
+    padding: 20px;
+    border: 3px dashed #777;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.cartao {
+    background-color: #ff5722;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 200px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+/* itens.html */
+
+/* body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.contentor {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    height: 300px;
+    padding: 10px;
+    gap: 15px;
+}
+
+.caixa {
+    background-color: #ff9800;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    flex: 1;
+}
+
+.guloso {
+    background-color: #4caf50;
+    flex: 2;
+}
+
+.rebelde {
+    background-color: #2196f3;
+    align-self: flex-start;
+}
+
+.fura-filas {
+    background-color: #e91e63;
+    order: -1;
+} */
+
+/* css-grid.html */
+
+/* .meu-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.caixa {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 20px;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.conteudo {
+    padding: 20px;
+} */
+
+/* .site-inteiro {
+    display: grid;
+    grid-template-areas:
+        "topo topo"
+        "lateral meio"
+        "fundo fundo";
+    gap: 15px;
+    height: 100vh;
+}
+
+.cabecalho {
+    grid-area: topo;
+    background: #2c3e50;
+    color: white;
+}
+
+.menu-lateral {
+    grid-area: lateral;
+    background: #e0e0e0;
+}
+
+.conteudo {
+    grid-area: meio;
+    background: #ffffff;
+}
+
+.rodape {
+    grid-area: fundo;
+    background: #2c3e50;
+    color: white;
+} */
+
+/* ---------- POKÉDEX ---------- */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.menu {
+    background-color: #ef5350;
+    color: white;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.capa {
+    background-color: #333;
+    color: white;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.galeria-pokemon {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.cartao {
+    background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    margin-top: 50px;
+
+    position: relative;
+}
+
+.cartao img {
+    width: 150px;
+    margin-top: -75px;
+    filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.3));
+}
+
+.selo-cp {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #ffcb05;
+    color: #333;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2 );
+}
+
+.cartao:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.tipos {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.badge {
+    padding: 5px 15px;
+    border-radius: 20px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.planta {
+    background-color: #4CAF50;
+}
+
+.veneno {
+    background-color: #9C27B0;
+}
+
+.fogo {
+    background-color: #FF9800;
+}
+
+.agua {
+    background-color: #2196F3;
+}
+
+.linha-status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+}
+
+.barra-fundo {
+    width: 70%;
+    background-color: #e0e0e0;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.barra-energia {
+    height: 100%;
+    border-radius: 5px;
+}
+
+.hp { background-color: #ff5959; }
+.ataque { background-color: #f5b041; }
+
+.btn-treinar {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-treinar:hover {
+    background-color: #2980b9;
+}
+
+.btn-treinar:active {
+    transform: scale(0.95);
+}
