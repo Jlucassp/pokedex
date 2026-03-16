@@ -13,7 +13,7 @@
         <ul>
             <li>Início</li>
             <li>Regiões</li>
-            <li id="btn-reset" style="cursor: pointer; background: #333; padding: 5px 10px; border-radius: 5px;">Limpar Treino</li>
+            <li id="btn-reset" style="cursor: pointer;">Limpar</li>
         </ul>
     </nav>
 
@@ -92,6 +92,13 @@
             <button class="btn-treinar">Testar Performance</button>
         </div>
     </main>
+
+    <div class="modal-overlay" id="modal">
+        <div class="modal-conteudo">
+            <button class="btn-fechar" id="fechar-modal">&times;</button>
+            <div id="detalhes-pokemon"></div>
+        </div>
+    </div>  
 
     <script src="./script.js"></script>
 </body>
