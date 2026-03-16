@@ -9,10 +9,11 @@
 <body>
     <nav class="menu">
         <h2>Pokédex</h2>
+        <input type="text" id="campo-busca" placeholder="Buscar Pokémon..." style="padding: 5px; border-radius: 5px; border: none;">
         <ul>
             <li>Início</li>
             <li>Regiões</li>
-            <li>Batalha</li>
+            <li id="btn-reset" style="cursor: pointer; background: #333; padding: 5px 10px; border-radius: 5px;">Limpar Treino</li>
         </ul>
     </nav>
 
@@ -20,7 +21,7 @@
         <h1>Escolha seu Pokémon Inicial</h1>
     </header>
 
-    <main class="galeria-pokemon">
+    <main class="galeria-pokemon" id="pokedex-lista">
         <div class="cartao">
             <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png" alt="Bulbasaur" width="150">
             <div class="selo-cp">CP 798</div>
@@ -91,5 +92,7 @@
             <button class="btn-treinar">Testar Performance</button>
         </div>
     </main>
+
+    <script src="./script.js"></script>
 </body>
 </html>
